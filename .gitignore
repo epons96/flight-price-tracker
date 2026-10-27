@@ -1,0 +1,4 @@
+__pycache__/
+.venv/
+# The real settings (with the route) are not published; see config.example.json.
+config.json

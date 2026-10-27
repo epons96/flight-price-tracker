@@ -1,0 +1,12 @@
+{
+  "title": "Flight prices",
+  "origin": "LHR",
+  "destination": "JFK",
+  "airlines": ["BA"],
+  "stay_days": [14],
+  "window_days": 240,
+  "adults": 1,
+  "currency": "GBP",
+  "country": "GB",
+  "timezone": "Europe/London"
+}
