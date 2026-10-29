@@ -81,6 +81,15 @@ def detect_changes(df):
     return c
 
 
+def current_prices(df):
+    """Upcoming itineraries at their latest price (each airline's latest check), with the lowest and
+    highest price seen for each."""
+    current = df[df["checked"] == df.groupby("airline")["checked"].transform("max")]
+    current = current[current["outbound_date"] > df["checked"].max().normalize()]
+    history = df.groupby(KEY)["price"].agg(lowest="min", highest="max").reset_index()
+    return current.merge(history, on=KEY).sort_values("outbound_date")
+
+
 def level_by_hour(df):
     """Mean deviation (%) of the price from the median of the same itinerary on the same day.
     Comparing against its own day isolates the hour effect from the trend over time."""
@@ -232,7 +241,6 @@ def report(data, out):
         return "\n".join(md) + "\n"
 
     latest = df["checked"].max()
-    today = latest.normalize()
     days_tracked = df["checked"].dt.date.nunique()
     changes = detect_changes(df)
     precise = changes[changes["precise"]]
@@ -240,11 +248,7 @@ def report(data, out):
     md[2:2] = ["", f"_Updated {latest:%Y-%m-%d %H:%M} (local time) · {df['checked'].nunique()} checks "
                f"since {df['checked'].min():%Y-%m-%d} · {len(changes)} price changes detected._"]
 
-    # Current price: whatever each airline's latest check returned.
-    current = df[df["checked"] == df.groupby("airline")["checked"].transform("max")]
-    current = current[current["outbound_date"] > today]
-    history = df.groupby(KEY)["price"].agg(lowest="min", highest="max").reset_index()
-    current = current.merge(history, on=KEY).sort_values("outbound_date")
+    current = current_prices(df)
 
     level, days_level = level_by_hour(df)
     rises_h = precise[precise["delta"] > 0].groupby(precise["checked"].dt.hour).size()

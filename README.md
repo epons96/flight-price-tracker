@@ -15,7 +15,8 @@ answers:
 1. GitHub Actions runs [track.py](track.py) every hour (at minute 17). For each airline and
    departure date it looks up the round trip and stores the cheapest fare in
    `data/prices-YYYY-MM.csv`.
-2. Once a day [analyze.py](analyze.py) reads the whole history and rebuilds `report/`.
+2. Once a day [analyze.py](analyze.py) reads the whole history and rebuilds `report/`, and
+   [notify.py](notify.py) sends a digest to Telegram if it is set up.
 3. Every run is logged in `data/runs.csv` (prices found, errors…). If a run gets no price at all
    it fails and GitHub sends an email.
 
@@ -41,6 +42,20 @@ Locally, copy `config.example.json` to `config.json` (it is git-ignored).
 | `window_days` | How many days ahead to look for departures. Dates the airline doesn't sell yet show up as "no flight" and are picked up once sales open |
 | `adults`, `currency`, `country` | Passengers, currency and the country the search is made from |
 | `timezone` | Timezone used to analyze the hours (e.g. `Europe/London`) |
+
+## Telegram digest (optional)
+
+Every morning, after the report, a Telegram message with the cheapest departure dates, what
+changed since the day before and when prices move, plus the price-by-date chart.
+
+1. In Telegram, open **@BotFather**, send `/newbot` and follow the steps. It gives you a token.
+2. Send your new bot any message (bots can't start a chat).
+3. With [gh](https://cli.github.com) logged in, run `python setup_telegram.py` and paste the
+   token. It finds your chat, stores `TELEGRAM_TOKEN` and `TELEGRAM_CHAT_ID` as repository
+   secrets and sends a test message.
+
+The message names the route, so it is never printed in the Actions logs. To preview it locally:
+`python notify.py --dry-run`.
 
 ## Running locally
 
