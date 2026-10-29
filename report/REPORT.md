@@ -1,13 +1,13 @@
 # Flight prices
 Round trip, 14-day stay, 1 adult, economy. Prices from Google Flights.
 
-_Updated 2026-10-29 22:23 (local time) · 52 checks since 2026-10-27 · 189 price changes detected._
+_Updated 2026-10-29 23:23 (local time) · 53 checks since 2026-10-27 · 190 price changes detected._
 
 ## Summary
 
 - **Cheapest right now: €814** with Air Europa, Mon 29 Mar 27 → Mon 12 Apr 27.
 - **When prices change:** most drops are detected at 08:00 and most rises at 09:00.
-- **Changes with a reliable time:** 108 rises and 81 drops over 3 days of tracking.
+- **Changes with a reliable time:** 109 rises and 81 drops over 3 days of tracking.
 - Only 3 days of tracking: treat these patterns as a first signal. Weekday comparisons start after 14 days.
 
 ## Cheapest dates right now
@@ -33,13 +33,13 @@ _Updated 2026-10-29 22:23 (local time) · 52 checks since 2026-10-27 · 189 pric
 
 | Departure day | Airline | Average | Cheapest | Departures |
 |---|---|---|---|---|
-| Monday | Air Europa | €1,210 | €814 | 31 |
+| Monday | Air Europa | €1,217 | €814 | 33 |
 | Tuesday | Air Europa | €977 | €814 | 15 |
-| Wednesday | Air Europa | €1,220 | €814 | 30 |
-| Thursday | Air Europa | €1,218 | €814 | 18 |
-| Friday | Air Europa | €814 | €814 | 11 |
+| Wednesday | Air Europa | €1,187 | €814 | 33 |
+| Thursday | Air Europa | €1,197 | €814 | 19 |
+| Friday | Air Europa | €814 | €814 | 12 |
 | Saturday | Air Europa | €927 | €814 | 23 |
-| Sunday | Air Europa | €1,175 | €814 | 29 |
+| Sunday | Air Europa | €1,234 | €814 | 33 |
 
 _Averages mix seasons: a day that only has flights in low season looks cheaper on average even if it isn't within the same week._
 
