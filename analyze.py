@@ -27,6 +27,7 @@ MAX_GAP = pd.Timedelta(hours=3)
 # Below these, the report shows the data but draws no conclusions.
 MIN_CHANGES = 20
 MIN_DAYS_BY_HOUR = 3
+MIN_DAYS_BY_WEEKDAY = 14  # every weekday seen at least twice
 MIN_DAYS_LEAD_TIME = 14
 
 THEMES = {
@@ -263,14 +264,20 @@ def report(data, out):
         md.append(f"- **Cheapest hour to check:** {h:02}:00, on average {pct(level[h])} "
                   f"against that day's median price ({days_level} days of data).")
     if len(precise) >= MIN_CHANGES and drops_h.sum() > 0:
-        md.append(f"- **When prices drop:** most drops are detected at {int(drops_h.idxmax()):02}:00 "
-                  f"and on {DAYS_LONG[int(drops_d.idxmax())]}s; rises at {int(rises_h.idxmax()):02}:00 "
-                  f"and on {DAYS_LONG[int(rises_d.idxmax())]}s.")
+        line = (f"- **When prices change:** most drops are detected at {int(drops_h.idxmax()):02}:00 "
+                f"and most rises at {int(rises_h.idxmax()):02}:00")
+        if days_tracked >= MIN_DAYS_BY_WEEKDAY:
+            line += (f"; by weekday, drops peak on {DAYS_LONG[int(drops_d.idxmax())]}s and rises on "
+                     f"{DAYS_LONG[int(rises_d.idxmax())]}s")
+        md.append(line + ".")
     md.append(f"- **Changes with a reliable time:** {int((precise['delta'] > 0).sum())} rises and "
               f"{int((precise['delta'] < 0).sum())} drops over {days_tracked} days of tracking.")
     if len(precise) < MIN_CHANGES:
         md.append(f"- Not enough changes yet to draw conclusions about hours and days (at least "
                   f"{MIN_CHANGES} needed). After 2-3 weeks of data this report becomes reliable.")
+    elif days_tracked < MIN_DAYS_BY_WEEKDAY:
+        md.append(f"- Only {days_tracked} days of tracking: treat these patterns as a first signal. "
+                  f"Weekday comparisons start after {MIN_DAYS_BY_WEEKDAY} days.")
     md.append("")
 
     if not current.empty:
@@ -310,6 +317,9 @@ def report(data, out):
                       draw_changes(list(rises_h), list(drops_h), [f"{h:02}:00" for h in range(24)], step=2)), "",
                figure(charts, "changes-by-day", "Price rises and drops by day of the week",
                       draw_changes(list(rises_d), list(drops_d), DAYS)), ""]
+        if days_tracked < MIN_DAYS_BY_WEEKDAY:
+            md += [f"_Only {days_tracked} days tracked: each weekday has to show up at least twice "
+                   f"({MIN_DAYS_BY_WEEKDAY} days) before they can be compared._", ""]
     else:
         md += ["_No price change detected yet._", ""]
 
