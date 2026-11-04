@@ -1,15 +1,15 @@
 # Flight prices
 Round trip, 14-day stay, 1 adult, economy. Prices from Google Flights.
 
-_Updated 2026-11-03 07:31 (local time) · 157 checks since 2026-10-27 · 358 price changes detected._
+_Updated 2026-11-04 07:32 (local time) · 181 checks since 2026-10-27 · 418 price changes detected._
 
 ## Summary
 
 - **Cheapest right now: €814** with Air Europa, Mon 29 Mar 27 → Mon 12 Apr 27.
-- **Cheapest hour to check:** 08:00, on average -0.3% against that day's median price (7 days of data).
+- **Cheapest hour to check:** 08:00, on average -0.2% against that day's median price (8 days of data).
 - **When prices change:** most drops are detected at 01:00 and most rises at 10:00.
-- **Changes with a reliable time:** 198 rises and 160 drops over 8 days of tracking.
-- Only 8 days of tracking: treat these patterns as a first signal. Weekday comparisons start after 14 days.
+- **Changes with a reliable time:** 232 rises and 186 drops over 9 days of tracking.
+- Only 9 days of tracking: treat these patterns as a first signal. Weekday comparisons start after 14 days.
 
 ## Cheapest dates right now
 
@@ -34,13 +34,13 @@ _Updated 2026-11-03 07:31 (local time) · 157 checks since 2026-10-27 · 358 pri
 
 | Departure day | Airline | Average | Cheapest | Departures |
 |---|---|---|---|---|
-| Monday | Air Europa | €1,180 | €814 | 32 |
-| Tuesday | Air Europa | €970 | €814 | 16 |
-| Wednesday | Air Europa | €1,175 | €814 | 33 |
-| Thursday | Air Europa | €1,233 | €814 | 19 |
+| Monday | Air Europa | €1,176 | €814 | 33 |
+| Tuesday | Air Europa | €976 | €814 | 16 |
+| Wednesday | Air Europa | €1,135 | €814 | 33 |
+| Thursday | Air Europa | €1,222 | €814 | 19 |
 | Friday | Air Europa | €814 | €814 | 12 |
-| Saturday | Air Europa | €928 | €814 | 24 |
-| Sunday | Air Europa | €1,186 | €814 | 33 |
+| Saturday | Air Europa | €934 | €814 | 24 |
+| Sunday | Air Europa | €1,133 | €814 | 32 |
 
 _Averages mix seasons: a day that only has flights in low season looks cheaper on average even if it isn't within the same week._
 
@@ -58,13 +58,13 @@ When each rise or drop was detected (local time). Only changes seen less than 3 
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="charts/changes-by-day-dark.png"><img alt="Price rises and drops by day of the week" src="charts/changes-by-day-light.png"></picture>
 
-_Only 8 days tracked: each weekday has to show up at least twice (14 days) before they can be compared._
+_Only 9 days tracked: each weekday has to show up at least twice (14 days) before they can be compared._
 
 ## How far ahead should you buy?
 
 Median of how far above its own minimum each flight is, by days left before departure. The lowest point of the curve is the lead time at which prices tend to bottom out.
 
-_At least 14 days of tracking needed (so far 8)._
+_At least 14 days of tracking needed (so far 9)._
 
 ## Biggest drops in the last 7 days
 
@@ -98,4 +98,4 @@ _At least 14 days of tracking needed (so far 8)._
 
 ## Tracking status
 
-- Air Europa, last 24 h: 25 runs, 4198 prices, 0 errors.
+- Air Europa, last 24 h: 24 runs, 4051 prices, 0 errors.
