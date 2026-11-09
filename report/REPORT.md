@@ -1,15 +1,14 @@
 # Flight prices
 Round trip, 14-day stay, 1 adult, economy. Prices from Google Flights.
 
-_Updated 2026-11-08 07:29 (local time) · 275 checks since 2026-10-27 · 617 price changes detected._
+_Updated 2026-11-09 07:40 (local time) · 299 checks since 2026-10-27 · 657 price changes detected._
 
 ## Summary
 
 - **Cheapest right now: €814** with Air Europa, Mon 29 Mar 27 → Mon 12 Apr 27.
-- **Cheapest hour to check:** 06:00, on average -0.2% against that day's median price (12 days of data).
-- **When prices change:** most drops are detected at 01:00 and most rises at 15:00.
-- **Changes with a reliable time:** 349 rises and 263 drops over 13 days of tracking.
-- Only 13 days of tracking: treat these patterns as a first signal. Weekday comparisons start after 14 days.
+- **Cheapest hour to check:** 08:00, on average -0.2% against that day's median price (13 days of data).
+- **When prices change:** most drops are detected at 01:00 and most rises at 15:00; by weekday, drops peak on Wednesdays and rises on Wednesdays.
+- **Changes with a reliable time:** 373 rises and 279 drops over 14 days of tracking.
 
 ## Cheapest dates right now
 
@@ -19,12 +18,12 @@ _Updated 2026-11-08 07:29 (local time) · 275 checks since 2026-10-27 · 617 pri
 | Tue 30 Mar 27 | Tue 13 Apr 27 | Air Europa | **€814** | €814 | €814 |
 | Wed 31 Mar 27 | Wed 14 Apr 27 | Air Europa | **€814** | €814 | €884 |
 | Thu 1 Apr 27 | Thu 15 Apr 27 | Air Europa | **€814** | €814 | €814 |
+| Fri 2 Apr 27 | Fri 16 Apr 27 | Air Europa | **€814** | €814 | €814 |
 | Sat 3 Apr 27 | Sat 17 Apr 27 | Air Europa | **€814** | €814 | €849 |
-| Mon 5 Apr 27 | Mon 19 Apr 27 | Air Europa | **€814** | €814 | €814 |
+| Sun 4 Apr 27 | Sun 18 Apr 27 | Air Europa | **€814** | €814 | €849 |
 | Tue 6 Apr 27 | Tue 20 Apr 27 | Air Europa | **€814** | €814 | €814 |
+| Thu 8 Apr 27 | Thu 22 Apr 27 | Air Europa | **€814** | €814 | €814 |
 | Fri 9 Apr 27 | Fri 23 Apr 27 | Air Europa | **€814** | €814 | €814 |
-| Sat 10 Apr 27 | Sat 24 Apr 27 | Air Europa | **€814** | €814 | €814 |
-| Mon 12 Apr 27 | Mon 26 Apr 27 | Air Europa | **€814** | €814 | €814 |
 
 ## Price by departure date
 
@@ -34,13 +33,13 @@ _Updated 2026-11-08 07:29 (local time) · 275 checks since 2026-10-27 · 617 pri
 
 | Departure day | Airline | Average | Cheapest | Departures |
 |---|---|---|---|---|
-| Monday | Air Europa | €1,155 | €814 | 26 |
-| Tuesday | Air Europa | €1,013 | €814 | 14 |
-| Wednesday | Air Europa | €1,205 | €814 | 25 |
-| Thursday | Air Europa | €1,155 | €814 | 15 |
-| Friday | Air Europa | €828 | €814 | 10 |
-| Saturday | Air Europa | €949 | €814 | 20 |
-| Sunday | Air Europa | €1,083 | €814 | 25 |
+| Monday | Air Europa | €1,154 | €814 | 33 |
+| Tuesday | Air Europa | €986 | €814 | 17 |
+| Wednesday | Air Europa | €1,173 | €814 | 33 |
+| Thursday | Air Europa | €1,135 | €814 | 19 |
+| Friday | Air Europa | €825 | €814 | 13 |
+| Saturday | Air Europa | €946 | €814 | 25 |
+| Sunday | Air Europa | €1,178 | €814 | 33 |
 
 _Averages mix seasons: a day that only has flights in low season looks cheaper on average even if it isn't within the same week._
 
@@ -58,13 +57,11 @@ When each rise or drop was detected (local time). Only changes seen less than 3 
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="charts/changes-by-day-dark.png"><img alt="Price rises and drops by day of the week" src="charts/changes-by-day-light.png"></picture>
 
-_Only 13 days tracked: each weekday has to show up at least twice (14 days) before they can be compared._
-
 ## How far ahead should you buy?
 
 Median of how far above its own minimum each flight is, by days left before departure. The lowest point of the curve is the lead time at which prices tend to bottom out.
 
-_At least 14 days of tracking needed (so far 13)._
+<picture><source media="(prefers-color-scheme: dark)" srcset="charts/lead-time-dark.png"><img alt="Price above its minimum by lead time" src="charts/lead-time-light.png"></picture>
 
 ## Biggest drops in the last 7 days
 
@@ -98,4 +95,4 @@ _At least 14 days of tracking needed (so far 13)._
 
 ## Tracking status
 
-- Air Europa, last 24 h: 24 runs, 3730 prices, 0 errors.
+- Air Europa, last 24 h: 24 runs, 3996 prices, 0 errors.
