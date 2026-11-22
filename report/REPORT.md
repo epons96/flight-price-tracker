@@ -1,29 +1,29 @@
 # Flight prices
 Round trip, 14-day stay, 1 adult, economy. Prices from Google Flights.
 
-_Updated 2026-11-21 07:30 (local time) · 585 checks since 2026-10-27 · 1520 price changes detected._
+_Updated 2026-11-22 07:31 (local time) · 609 checks since 2026-10-27 · 1561 price changes detected._
 
 ## Summary
 
-- **Cheapest right now: €815** with Air Europa, Thu 1 Apr 27 → Thu 15 Apr 27.
-- **Cheapest hour to check:** 07:00, on average -0.2% against that day's median price (25 days of data).
+- **Cheapest right now: €815** with Air Europa, Fri 2 Apr 27 → Fri 16 Apr 27.
+- **Cheapest hour to check:** 07:00, on average -0.2% against that day's median price (26 days of data).
 - **When prices change:** most drops are detected at 01:00 and most rises at 01:00; by weekday, drops peak on Wednesdays and rises on Tuesdays.
-- **Changes with a reliable time:** 959 rises and 523 drops over 26 days of tracking.
+- **Changes with a reliable time:** 982 rises and 540 drops over 27 days of tracking.
 
 ## Cheapest dates right now
 
 | Departure | Return | Airline | Price | Lowest seen | Highest seen |
 |---|---|---|---|---|---|
-| Thu 1 Apr 27 | Thu 15 Apr 27 | Air Europa | **€815** | €814 | €815 |
 | Fri 2 Apr 27 | Fri 16 Apr 27 | Air Europa | **€815** | €814 | €815 |
-| Fri 9 Apr 27 | Fri 23 Apr 27 | Air Europa | **€815** | €814 | €815 |
 | Tue 13 Apr 27 | Tue 27 Apr 27 | Air Europa | **€815** | €814 | €815 |
 | Wed 14 Apr 27 | Wed 28 Apr 27 | Air Europa | **€815** | €814 | €815 |
-| Thu 15 Apr 27 | Thu 29 Apr 27 | Air Europa | **€815** | €814 | €815 |
-| Fri 16 Apr 27 | Fri 30 Apr 27 | Air Europa | **€815** | €814 | €815 |
-| Sun 18 Apr 27 | Sun 2 May 27 | Air Europa | **€815** | €814 | €815 |
 | Tue 20 Apr 27 | Tue 4 May 27 | Air Europa | **€815** | €814 | €815 |
-| Wed 21 Apr 27 | Wed 5 May 27 | Air Europa | **€815** | €814 | €815 |
+| Mon 26 Apr 27 | Mon 10 May 27 | Air Europa | **€815** | €814 | €815 |
+| Thu 29 Apr 27 | Thu 13 May 27 | Air Europa | **€815** | €814 | €815 |
+| Sun 2 May 27 | Sun 16 May 27 | Air Europa | **€815** | €814 | €815 |
+| Thu 6 May 27 | Thu 20 May 27 | Air Europa | **€815** | €814 | €815 |
+| Fri 7 May 27 | Fri 21 May 27 | Air Europa | **€815** | €814 | €815 |
+| Mon 10 May 27 | Mon 24 May 27 | Air Europa | **€815** | €814 | €815 |
 
 ## Price by departure date
 
@@ -33,13 +33,13 @@ _Updated 2026-11-21 07:30 (local time) · 585 checks since 2026-10-27 · 1520 pr
 
 | Departure day | Airline | Average | Cheapest | Departures |
 |---|---|---|---|---|
-| Monday | Air Europa | €1,156 | €815 | 16 |
-| Tuesday | Air Europa | €1,002 | €815 | 11 |
-| Wednesday | Air Europa | €1,127 | €815 | 16 |
-| Thursday | Air Europa | €968 | €815 | 11 |
-| Friday | Air Europa | €843 | €815 | 10 |
-| Saturday | Air Europa | €980 | €815 | 13 |
-| Sunday | Air Europa | €1,153 | €815 | 15 |
+| Monday | Air Europa | €1,099 | €815 | 9 |
+| Tuesday | Air Europa | €1,012 | €815 | 6 |
+| Wednesday | Air Europa | €1,089 | €815 | 12 |
+| Thursday | Air Europa | €1,035 | €815 | 11 |
+| Friday | Air Europa | €835 | €815 | 7 |
+| Saturday | Air Europa | €959 | €815 | 9 |
+| Sunday | Air Europa | €1,210 | €815 | 20 |
 
 _Averages mix seasons: a day that only has flights in low season looks cheaper on average even if it isn't within the same week._
 
@@ -85,7 +85,7 @@ Median of how far above its own minimum each flight is, by days left before depa
 | 2026-11-17 15:23 | Mon 23 Nov 26 | Mon 7 Dec 26 | Air Europa | €2,220 | €2,950 | €730 (+32.9%) |
 | 2026-11-18 12:23 | Sun 22 Nov 26 | Sun 6 Dec 26 | Air Europa | €2,220 | €2,950 | €730 (+32.9%) |
 | 2026-11-18 22:22 | Mon 30 Nov 26 | Mon 14 Dec 26 | Air Europa | €2,220 | €2,950 | €730 (+32.9%) |
-| 2026-11-14 15:22 | Sun 22 Nov 26 | Sun 6 Dec 26 | Air Europa | €2,119 | €2,824 | €705 (+33.3%) |
+| 2026-11-21 13:26 | Wed 25 Nov 26 | Wed 9 Dec 26 | Air Europa | €2,220 | €2,950 | €730 (+32.9%) |
 | 2026-11-17 19:25 | Wed 25 Nov 26 | Wed 9 Dec 26 | Air Europa | €2,120 | €2,825 | €705 (+33.3%) |
 | 2026-11-17 00:22 | Sun 22 Nov 26 | Sun 6 Dec 26 | Air Europa | €2,219 | €2,825 | €606 (+27.3%) |
 | 2026-11-15 18:22 | Sun 29 Nov 26 | Sun 13 Dec 26 | Air Europa | €2,019 | €2,624 | €605 (+30.0%) |
@@ -95,4 +95,4 @@ Median of how far above its own minimum each flight is, by days left before depa
 
 ## Tracking status
 
-- Air Europa, last 24 h: 25 runs, 3796 prices, 1 errors.
+- Air Europa, last 24 h: 24 runs, 3666 prices, 0 errors.
